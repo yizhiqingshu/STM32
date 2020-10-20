@@ -16,7 +16,7 @@
   */
   
 #include "stm32f4xx.h"
-
+#include "jianlai_.h"
 /**
   * @brief  主函数
   * @param  无
@@ -30,6 +30,14 @@ int main(void)
 		* 如果用户想修改系统时钟，可自行编写程序修改
 		*/
 		  /* add your code here ^_^. */
+	bsp_Inittimer1();
+	TIM8_PWM_Init();
+	TIM_SetCompare1(TIM1,8400);
+	TIM_SetCompare2(TIM1,8400);
+	TIM_SetCompare3(TIM1,8400);
+	
+	TIM_SetCompare1(TIM8,8400);
+
   	  while(1);
 
 }

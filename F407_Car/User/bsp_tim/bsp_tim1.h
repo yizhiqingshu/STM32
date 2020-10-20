@@ -1,7 +1,9 @@
 #ifndef BSP_TIM1_H_
 #define BSP_TIM1_H_
 #include "jianlai_.h"
-
-void TIM14_PWM_Init(u32 arr,u32 psc);
-
+void TIM8_GPIOAF_Config(void);
+void TIM8_PWM_Init(void);
+void bsp_InitTimer1GPIO(void);
+void bsp_Inittimer1(void);
 #endif
+
