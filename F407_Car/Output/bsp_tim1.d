@@ -37,3 +37,12 @@
 ..\..\output\bsp_tim1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 ..\..\output\bsp_tim1.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
 ..\..\output\bsp_tim1.o: ..\..\User\bsp_tim\bsp_tim1.h
+..\..\output\bsp_tim1.o: ..\..\User\bsp_tim\bsp_tim5.h
+..\..\output\bsp_tim1.o: ..\..\User\bsp_PID\bsp_PID.h
+..\..\output\bsp_tim1.o: D:\program__f5\KEIL\KEIL_CORE\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\bsp_tim1.o: D:\program__f5\KEIL\KEIL_CORE\ARM\ARMCC\Bin\..\include\math.h
+..\..\output\bsp_tim1.o: ..\..\User\delay\delay.h
+..\..\output\bsp_tim1.o: ..\..\User\bsp_tim\jianlai_.h
+..\..\output\bsp_tim1.o: ..\..\User\usart\usart.h
+..\..\output\bsp_tim1.o: D:\program__f5\KEIL\KEIL_CORE\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\bsp_tim1.o: ..\..\User\sys\sys.h

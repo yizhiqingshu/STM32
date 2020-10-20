@@ -37,3 +37,11 @@
 ..\..\output\main.o: ..\..\User\bsp_tim\jianlai_.h
 ..\..\output\main.o: ..\..\User\bsp_tim\bsp_tim1.h
 ..\..\output\main.o: ..\..\User\bsp_tim\jianlai_.h
+..\..\output\main.o: ..\..\User\bsp_tim\bsp_tim5.h
+..\..\output\main.o: ..\..\User\bsp_PID\bsp_PID.h
+..\..\output\main.o: D:\program__f5\KEIL\KEIL_CORE\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\main.o: D:\program__f5\KEIL\KEIL_CORE\ARM\ARMCC\Bin\..\include\math.h
+..\..\output\main.o: ..\..\User\delay\delay.h
+..\..\output\main.o: ..\..\User\usart\usart.h
+..\..\output\main.o: D:\program__f5\KEIL\KEIL_CORE\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\main.o: ..\..\User\sys\sys.h

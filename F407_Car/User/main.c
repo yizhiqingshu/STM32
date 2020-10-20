@@ -22,6 +22,9 @@
   * @param  无
   * @retval 无
   */
+  
+extern __IO float DutyCycle;
+extern __IO float Frequency ;
 int main(void)
 {
 		/* 程序来到main函数之前，启动文件：statup_stm32f4xx.s已经调用
@@ -30,15 +33,25 @@ int main(void)
 		* 如果用户想修改系统时钟，可自行编写程序修改
 		*/
 		  /* add your code here ^_^. */
+	  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
+	delay_init(168);  //初始化延时函数
+		uart_init(115200);//初始化串口波特率为115200
+
+	TIMx_Configuration();
 	bsp_Inittimer1();
 	TIM8_PWM_Init();
-	TIM_SetCompare1(TIM1,8400);
-	TIM_SetCompare2(TIM1,8400);
-	TIM_SetCompare3(TIM1,8400);
+	TIM_SetCompare1(TIM1,100);
+	TIM_SetCompare2(TIM1,200);
+	TIM_SetCompare3(TIM1,300);
 	
-	TIM_SetCompare1(TIM8,8400);
-
-  	  while(1);
+	TIM_SetCompare1(TIM8,50);
+  	  while(1)
+	  {
+//		  delay_ms(100);
+//	  printf("占空比：%0.2f%%   频率：%0.2fHz\n",DutyCycle,Frequency);
+	
+	  }  
+	  
 
 }
 

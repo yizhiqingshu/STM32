@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F40_41xxx,</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\..\Libraries\CMSIS\Include;..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\..\User;..\..\User\bsp_tim</IncludePath>
+              <IncludePath>..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\..\Libraries\CMSIS\Include;..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\..\User;..\..\User\bsp_tim;..\..\User\bsp_PID;..\..\User\usart;..\..\User\delay;..\..\User\sys</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -776,9 +776,14 @@
               <FilePath>..\..\User\bsp_tim\bsp_tim1.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_tim3.c</FileName>
+              <FileName>bsp_tim5.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\User\bsp_tim\bsp_tim3.c</FilePath>
+              <FilePath>..\..\User\bsp_tim\bsp_tim5.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_PID.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\bsp_PID\bsp_PID.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -789,6 +794,26 @@
               <FileName>必读说明.txt</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\必读说明.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usart</GroupName>
+          <Files>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\delay\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\usart\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\sys\sys.c</FilePath>
             </File>
           </Files>
         </Group>

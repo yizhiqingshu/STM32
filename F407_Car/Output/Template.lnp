@@ -41,7 +41,11 @@
 "..\..\output\main.o"
 "..\..\output\stm32f4xx_it.o"
 "..\..\output\bsp_tim1.o"
-"..\..\output\bsp_tim3.o"
+"..\..\output\bsp_tim5.o"
+"..\..\output\bsp_pid.o"
+"..\..\output\delay.o"
+"..\..\output\usart.o"
+"..\..\output\sys.o"
 --library_type=microlib --strict --scatter "..\..\Output\Template.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
