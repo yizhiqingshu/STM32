@@ -87,10 +87,6 @@ void bsp_Inittimer1(void)
 TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStrecture;
 TIM_OCInitTypeDef TIM_OCInitStructure;
 RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1,ENABLE);/*使能定时器1的时钟*/
-
-
-
-
 bsp_InitTimer1GPIO();/*初始化IO口*/
 
 TIM_TimeBaseInitStrecture.TIM_Period = 999;/*设置自动重装*/

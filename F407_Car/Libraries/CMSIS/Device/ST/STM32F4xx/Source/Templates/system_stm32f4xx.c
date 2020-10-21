@@ -373,7 +373,7 @@
  #define PLL_M      8
 #elif defined (STM32F410xx) || defined (STM32F411xE)
  #if defined(USE_HSE_BYPASS)
-  #define PLL_M      8    
+  #define PLL_M      8    	
  #else /* !USE_HSE_BYPASS */
   #define PLL_M      16
  #endif /* USE_HSE_BYPASS */
