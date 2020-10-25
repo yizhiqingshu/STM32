@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "bsp_PID.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -92,24 +92,19 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
-  MX_TIM8_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
-  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
-  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_3);
-  HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_1);
-
-  HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_1);
-  HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_2);
-  HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_3);
-  HAL_TIMEx_PWMN_Start(&htim8,TIM_CHANNEL_1);
-  	 __HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_1,50);
-	 __HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_2,50);
-	 __HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_3,50);
-	 __HAL_TIM_SetCompare(&htim8,TIM_CHANNEL_1,50);
+    HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
+    HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
+    HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_3);
+    HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_4);
+    __HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_1,50);
+    __HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_2,50);
+    __HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_3,50);
+    __HAL_TIM_SetCompare(&htim1,TIM_CHANNEL_4,50);
+// ‰»Î≤∂ªÒ
     HAL_TIM_IC_Start_IT(&htim2,TIM_CHANNEL_1);
-	HAL_TIM_IC_Start_IT(&htim2,TIM_CHANNEL_2);
+    HAL_TIM_IC_Start_IT(&htim2,TIM_CHANNEL_2);
   
   /* USER CODE END 2 */
 
@@ -117,8 +112,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		//printf("IC1Value = %d  IC2Value = %d ",IC1Value,IC2Value);
-
+    
+  
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
